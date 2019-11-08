@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popcorn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h1>Club Popcorn</h1>
+        <form action="MAILTO:nathan_harding@my.uri.edu" method="post" enctype="text/plain">
+
+            <label>Buyer's Name:</label>
+            <input id="buyersName" type="text" name="Buyer's Name" placeholder="Name Required">
+            <br>
+            <label>Street Address:</label>
+            <input class="streetAddressCityStateZip" name="Street Address" id = "streetAddress" type="text">
+            <br>
+            <label>City, State, Zip</label>
+            <input class="streetAddressCityStateZip" name="City, State, Zip" id = "cityStateZip" type="text">
+            <br>
+
+            <table>
+                <tr>
+                    <th>
+                        <h3>Product Name</h3>
+                    </th>
+                    <th>
+                        <h3>Price</h3>
+                    </th>
+                    <th>
+                        <h3>Quantity</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Unpopped Popcorn (1 lb.)</td>
+                    <td>$3.00</td>
+                    <td><input class="quantity" type="number" min=0></td>
+                </tr>
+                <tr>
+                    <td>Caramel Popcorn (2 lb. canister)</td>
+                    <td>$3.50</td>
+                    <td><input class="quantity" type="number" min=0></td>
+                </tr>
+                <tr>
+                    <td>Caramel Nut Popcorn (2 lb. canister)</td>
+                    <td>$4.50</td>
+                    <td><input class="quantity" type="number" min=0></td>
+                </tr>
+                <tr>
+                    <td>Toffey Nut Popcorn (2 lb. canister)</td>
+                    <td>$5.00</td>
+                    <td><input class="quantity" type="number" min=0></td>
+                </tr>
+                <tr>
+                    <td><strong>Subtotal:</strong></td>
+                    <td><input id="subTotal" name="Sub-total" type="float"></td>
+                    <td><button type = "button" onclick="calcSubtotal()">Update Subtotal</button></td>
+                </tr>
+            </table>
+
+            <h1>Payment Method</h1>
+            <br>
+            <br>
+            <label><strong>Grand Total:</strong></label>
+            <input id = "grandTotal" name="Grand total" type="float">
+            <br>
+            <br>
+            <input type="radio" class = "radioButton" name = "card"> Visa
+            <input type="radio" class = "radioButton" name = "card"> MasterCard
+            <input type="radio" class = "radioButton" name = "card"> Discover
+            <input type="radio" class = "radioButton" name = "card"> American Express
+            <input type="radio" class = "radioButton" name = "card"> Check
+            <br>
+            <br>
+            <br>
+
+            <input id="sub" type="submit" value="Submit Order" onclick="submitForm()">
+            <button type = "button" onclick="clearForm()">Clear Form</button>
+
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

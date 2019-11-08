@@ -1,0 +1,28 @@
+#buyersName {
+    width: 200px;
+}
+
+.streetAddressCityStateZip {
+    width: 250px;
+}
+
+.quantity {
+    width: 30px;
+    margin-left: 30px;
+}
+
+#subTotal {
+    width: 40px;
+}
+
+#grandTotal {
+    width: 60px;
+}
+
+div {
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+}
