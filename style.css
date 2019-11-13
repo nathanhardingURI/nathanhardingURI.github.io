@@ -1,0 +1,13 @@
+body{background-color:#A9E2F3; color:#0B0B3B;}
+
+table{width:800px; background-color:#0B2F3A;}
+
+td{width:200px;}
+
+#page-main-div{
+    width:800px;
+    margin:10px auto;
+    padding:50px;
+}
+
+#float-pic{width:150px; float:left;}
